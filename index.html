@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Some Anoringa Post</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <style>
+
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  
+  <script>
+ 
+  </script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <h1>Some Anoringa Post</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="row">
+    <div class="col-md-6" style="background-color:lavender;">
+    
+        <div class="">
+      <img src="https://www.w3schools.com/bootstrap4/cinqueterre.jpg" class="img-fluid post-img" alt="Responsive image">
+    </div>
+
+    <h2 class="p-3" >Fui al supermercado y paso esto</h2>
+
+    <p>Bacon ipsum dolor sit amet capicola ball tip beef ribs leberkas, turkey biltong salami shoulder ribeye. Leberkas chuck cow andouille kevin ribeye pork strip steak pork chop beef ribs beef ball tip corned beef. Leberkas prosciutto brisket, short ribs salami cow sirloin chicken. Bacon pork belly bresaola tenderloin biltong leberkas. Strip steak beef leberkas sirloin, venison turkey hamburger kevin. Drumstick chicken ground round t-bone flank fatback jerky ball tip. Jerky ribeye sirloin t-bone.</p>
+
+    <p>Tongue prosciutto pork ball tip ham hock, meatball sirloin brisket kielbasa biltong doner shoulder bresaola. Chuck beef ribs biltong, kielbasa ground round swine andouille corned beef. Venison hamburger tongue shank. Leberkas doner pork chop sausage kielbasa pancetta, biltong brisket pastrami tenderloin boudin filet mignon sirloin cow meatloaf. Ham ball tip bacon pork belly sirloin.</p>
+
+    <p>Shoulder pig short ribs, salami chicken venison bresaola. Frankfurter meatball pork chop pork loin, turkey strip steak kielbasa pork belly drumstick shank prosciutto. Pork chicken ground round, sirloin tri-tip ham hock pork chop cow meatloaf pork loin bresaola turkey. Prosciutto hamburger pork short ribs flank tri-tip chicken pig bacon meatloaf t-bone shankle doner. Bresaola doner spare ribs biltong jowl boudin, tri-tip pork leberkas ham hock filet mignon.</p>
+
+    <p>Leberkas strip steak shoulder meatball, flank biltong shank fatback ball tip swine prosciutto hamburger. Jerky frankfurter drumstick, ham ham hock hamburger kevin kielbasa salami chuck. Flank rump beef cow, beef ribs meatball ball tip jowl bacon pork chop. Biltong tongue pork chop hamburger. Frankfurter tri-tip pancetta pork chop venison t-bone andouille beef ribs salami boudin meatball doner spare ribs. Brisket pork chop pig kielbasa jerky chuck pork belly beef meatball boudin short loin. Doner jerky andouille ham meatloaf prosciutto kevin pork belly short loin pancetta.</p>
+
+    <p>Corned beef spare ribs hamburger pork tenderloin flank pork loin beef ribs sausage brisket chicken venison bacon short loin sirloin. Ribeye tail short ribs andouille kevin chicken shankle meatloaf, corned beef rump sirloin t-bone chuck tongue. Swine venison tongue, sirloin turducken drumstick bresaola strip steak rump. Kevin ham hock meatball tri-tip. Ground round leberkas pig beef salami strip steak meatball beef ribs. Chicken ball tip rump, short loin bresaola pork t-bone jerky jowl pork chop tail chuck sausage prosciutto.</p></div>
+    <div class="col-md-6" style="background-color:lavenderblush;">
+    <h2 class="p-2" >Comentarios</h2>
+    <div style="width: 100%">
+    
+  <form class="pt-3">
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="col">
+        <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+      </div>
+    </div>
+  </form>
+  <div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+    <div id="comentarios">
+
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+<footer>
+  <p><a href="#">Contact Us</a> | <a href="#">Sitemap</a> | <a href="#">Privacy Policy</a></p>
+  <p>&copy;2020 Copyright info here...</p>
+</footer>
+
+<script>
+    var comentarios = [
+        {
+            id: 20949438,
+            username: "lukaneco",
+            content: "Hola pa, que haces",
+            inResponseTo: [],
+            created_at: 12312948123
+        },
+        {
+            id: 20949439,
+            username: "raul12312",
+            content: "nada por suerte",
+            inResponseTo: [20949438],
+            created_at: 12312948123
+        },
+        {
+            id: 20949440,
+            username: "raulx",
+            content: "aca tmando unos verdes",
+            inResponseTo: [20949438,20949439],
+            created_at: 12312948123
+        }
+    ]
+    /*
+    <div class="repo">
+        <div class="stats">en respuesta de @sjdkdj @asdas</div>
+    
+        <p>just a to-do app that saves data to local storage</p>
+    
+        <div class="stats" style="display: inline-block;">por lukanco<p class='last-updated pl-5'
+                style="font-style:italic;display: inline-block;FLOAT:RIGHT;">Last updated: 3 weeks
+                ago.</p>
+        </div>
+    
+    </div>
+    */
+
+    console.log(comentarios);
+
+    for (var i = 0, len = comentarios.length; i < len; i++) {
+        unComentario = comentarios[i];
+
+        console.log(unComentario.content);
+        div = document.createElement("div");
+        div.className = "repo";
+        div.id = unComentario.id;
+
+
+        if (unComentario.username) {
+            element_in_the_head = document.createElement("div");
+            element_in_the_head.className = "stats";
+            content = "POR "+unComentario.username
+            if (unComentario.inResponseTo.length > 0) {
+                
+                commentReferences ="";
+
+
+                unComentario.inResponseTo.forEach(element => {
+                            /*
+                            // Create anchor element. 
+                            var a = document.createElement('a');  
+                            
+                            // Create the text node for anchor element. 
+                            var link = document.createTextNode(element); 
+                                
+                            // Append the text node to anchor element. 
+                            a.appendChild(link);  
+                                
+                            // Set the title. 
+                            a.title = "@"+element;  
+                                
+                            // Set the href property. 
+                            a.href = "#"+element;  
+                                
+                            // Append the anchor element to the body. 
+                            //document.body.prepend(a);  
+                            */
+                            commentReferences = commentReferences + '<a class="pl-1 pr-1" href="#'+element+'">@'+element+'</a>';
+
+
+
+            //element_in_the_head = document.createElement("a");
+            //element_in_the_head.className = "stats";
+
+                    //<a href="#top">Top</a>
+
+                });
+                content = content + " en respuesta de " + commentReferences;
+            }
+            element_in_the_head.innerHTML = '<a class="pr-1" href="#'+unComentario.id+'">@'+unComentario.id+'</a>'+content;
+            //h3.innerHTML = "<a href='" + repo.html_url + "'>" + repo.name + "</a>";
+            //h3.innerHTML = "<a href='" + repo.html_url + "'>" + repo.name + "</a>";
+            div.appendChild(element_in_the_head);
+        }
+
+        if (unComentario.content) {
+            element_content = document.createElement("p");
+            element_content.className = "";
+            element_content.innerHTML = unComentario.content;
+            //h3.innerHTML = "<a href='" + repo.html_url + "'>" + repo.name + "</a>";
+            //h3.innerHTML = "<a href='" + repo.html_url + "'>" + repo.name + "</a>";
+            div.appendChild(element_content);
+        }
+        /*
+        function crearElementoHTML(elementType="div",elementClasses="",elementContent="test",elementToAppend=document.body) {
+        
+            some_element = document.createElement(elementType);
+            some_element.className = elementClasses;
+            some_element.innerHTML = elementContent;
+            elementToAppend.appendChild(some_element);
+        }
+        */
+
+        //<p class='last-updated'>Last updated: 3 weeks ago.</p>
+
+        var asdklasdlkwq = document.createElement("p");
+        asdklasdlkwq.innerHTML = "Last updated: 3 weeks ago.";
+        //Create text with DOM
+        asdklasdlkwq.className = "last-updated";
+        div.appendChild(asdklasdlkwq);
+
+
+
+        var commentContainer = document.querySelector("#comentarios")
+        console.log(commentContainer);
+        //var commentContainer = document.querySelector("#comentarios")
+        commentContainer.appendChild(div);
+
+
+    }
+
+
+    var txt1 = "<p>Text.</p>";        // Create text with HTML
+    var txt2 = $("<p></p>").text("Text.");  // Create text with jQuery
+    var txt3 = document.createElement("p");
+    txt3.innerHTML = "Text.";         // Create text with DOM
+    console.log(txt1, txt2, txt3);
+    $(".container-fluid").append(txt1, txt2, txt3);   // Append new elements
+
+
+    $("body").append("<p>Text.</p>")
+</script>
+</body>
+</html>

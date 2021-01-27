@@ -1,0 +1,229 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  text-align: center;
+}
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+header {
+  background-color: #aaa;
+  height: 50px;
+}
+.LeftMenu {
+  background-color: #cca;
+  width: 100%;
+}
+.Content {
+  width: 100%;
+  background-color: #ccf;
+}
+footer {
+  background-color: #aaa;
+  height: 100px;
+}
+
+.nav {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.nav > li,
+.nav > li > a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.inline-items {
+  margin-top: 0;
+}
+
+.inline-items li {
+  margin-left: 0;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inline-items li:first-child {
+  margin-left: 0;
+  border: none;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.inline-items li:last-child {
+  padding-right: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 47.5em) {
+  .Middle {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+  }
+  .Content {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 0 0;
+    overflow: auto;
+  }
+  .LeftMenu {
+    margin-right: 50%;
+    display: block;
+  }
+
+  .Content {
+    /*
+    position: absolute;
+    */
+    top: 0;
+    right: 0;
+    width: 50%;
+    display: block;
+  }
+}
+
+/*
+@media screen and (min-width: 47.5em) {
+  .leftColumn {
+    margin-right: 19.5em;
+  }
+
+  .rightColumn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18.75em;
+  }
+} MEDIA QUERIES */
+.post-img {
+  /*
+  position: absolute;
+  */
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+/*
+
+comments
+
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  max-width: 60em;
+  margin: 3em auto;
+  line-height: 1.5em;
+}
+
+header,
+.repo {
+  border: 1px solid #eee;
+  padding: 1em;
+  border-radius: 3px;
+}
+
+header :first-child,
+.repo :first-child {
+  margin-top: 0;
+}
+
+header :last-child,
+.repo :last-child {
+  margin-bottom: 0;
+}
+
+.repo {
+  margin-bottom: 1em;
+}
+
+.repo h3 {
+  margin-bottom: 0;
+}
+
+.stats,
+.last-updated {
+  font-size: 0.7em;
+  color: #666;
+}
+
+.stats {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.last-updated {
+  font-style: italic;
+}
+
+header {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+header img {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+section {
+  padding-left: 1em;
+  float: left;
+  width: 75%;
+}
+#comentarios {
+  text-align: left;
+}
+/*# sourceMappingURL=style.css.map */
